@@ -1,0 +1,127 @@
+<style>
+  .subscribe-button{
+    background-color: rgb(200, 9, 9);
+    padding: 4px 8px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    cursor:pointer;
+    transition: opacity 0.5s;
+  }
+
+  /* Hover is a pseudo class */
+  /* opacity takes only values between 0 and 1 */
+  .subscribe-button:hover{
+    opacity: 0.6;
+  }
+
+  /* Active is when button is clicked */
+  .subscribe-button:active{
+    opacity: 0.5;
+  }
+
+  .join-button{
+    padding-bottom: 9px;
+    padding-top: 9px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: white;
+    color: rgb(30, 30, 188);
+    border-color: rgb(75, 75, 207);
+    border-radius: 3px;
+    border-width: 1px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.6s, color 0.8s; /* 1s = 1 second Transition make the animation smooth */
+  }
+
+  .join-button:hover{
+    background-color:rgb(10, 81, 205);
+    color: white;
+  }
+
+  .tweet-button{
+    padding-left: 16px;
+    padding-right:16px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius: 25px;
+    background-color: rgba(17, 76, 214, 0.847);
+    color: white;
+    border-color: rgba(27, 102, 243, 0.847);
+    border:none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor:pointer;
+    margin-left: 10px;
+    transition: opacity box-shadow 0.6s;
+    
+  }   
+
+  .tweet-button:hover{
+    /* Right vertical horizontal blur for shadow */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    opacity: 0.7;
+  }
+
+  /* Pagination */
+  .back-button{
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-right: 2px;
+  }
+
+  .next-button{
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left: 2px;
+  }
+
+  .search-result{
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+
+
+
+  
+</style>
+
+<!-- The drawback of adding custom height and width in css is that when we insert extra text the button size will change -->
+<!-- To avoid this we can use padding -->
+<!-- Padding is the space between the content and the border of the element -->
+<button class="subscribe-button">Subscribe to my channel</button>
+<button class="join-button">JOIN NOW</button>
+
+<button class="tweet-button">Tweet</button>
+
+<br>
+<br>
+<br>
+
+<!-- Pagination -->
+
+<button class="back-button">back</button>
+<a class="search-result" href="http://www.google.com">1</a>
+<a class="search-result" href="http://www.google.com">2</a>
+<a class="search-result" href="http://www.google.com">3</a>
+<a class="search-result" href="http://www.google.com">4</a>
+<a class="search-result" href="http://www.google.com">5</a>
+<button class="next-button">next</button>
+
+
+
+<!-- <p class="new-text">new</p>
+<p class="t1">MacBook Pro</p>
+<p class="t2">Supercharged for pros.</p>
+<p class="price">From $1999</p>
+<button class="buy-button">Buy</button> -->
